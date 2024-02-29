@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactDOM } from "react";
 import { Link } from "react-router-dom";
-import { RiMenu2Line } from "react-icons/ri";
+// import { RiMenu2Line } from "react-icons/ri";
 import { MdOutlineLocalPhone } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
 
@@ -10,9 +10,7 @@ export default function Nav() {
   return (
     <>
       <div className="containerNav">
-        <div>
-          <RiMenu2Line className="menuIcons" />
-        </div>
+        <div>{/* <RiMenu2Line className="menuIcons" /> */}</div>
         <div className="listsLink">
           <Link className="link" to="/react-vite-Full-E-Commerce-Landing-Page">
             Home
