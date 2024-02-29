@@ -1,0 +1,25 @@
+.containerNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+  box-shadow: 2px 2px 2px whitesmoke;
+}
+.containerNav .listsLink {
+  display: flex;
+  column-gap: 50px;
+}
+.containerNav .link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.containerNav .numberPhone {
+  display: flex;
+}
+.containerNav .menuIcons {
+  border: 1px solid rgb(178, 176, 176);
+  padding: 2px;
+  border-radius: 4px;
+}
