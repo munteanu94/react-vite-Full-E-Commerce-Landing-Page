@@ -15,6 +15,13 @@
   align-items: center;
   color: black;
 }
+.containerNav .link:hover {
+  color: red;
+}
+.containerNav .link:hover .IoIosArrowDown {
+  transform: rotate(180deg);
+  transition: 0.5s ease-in-out;
+}
 .containerNav .numberPhone {
   display: flex;
 }
@@ -22,4 +29,33 @@
   border: 1px solid rgb(178, 176, 176);
   padding: 2px;
   border-radius: 4px;
+  width: 25px;
+  height: 25px;
+}
+@media (max-width: 1150px) {
+  .containerNav .listsLink {
+    display: flex;
+    column-gap: 20px;
+  }
+}
+@media (max-width: 874px) {
+  .containerNav {
+    padding: 10px;
+  }
+}
+@media (max-width: 674px) {
+  .containerNav .listsLink {
+    display: none;
+  }
+  .containerNav {
+    padding: 10px 50px;
+  }
+}
+@media (max-width: 450px) {
+  .containerNav .listsLink {
+    display: none;
+  }
+  .containerNav {
+    padding: 10px 20px;
+  }
 }
