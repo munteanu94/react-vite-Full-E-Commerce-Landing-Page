@@ -14,7 +14,7 @@ export default function Nav() {
           <RiMenu2Line className="menuIcons" />
         </div>
         <div className="listsLink">
-          <Link className="link" to="/">
+          <Link className="link" to="/react-vite-Full-E-Commerce-Landing-Page">
             Home
           </Link>
           <Link className="link">

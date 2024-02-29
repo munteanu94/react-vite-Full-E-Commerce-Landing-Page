@@ -8,7 +8,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route
+          path="/react-vite-Full-E-Commerce-Landing-Page"
+          element={<Home />}
+        ></Route>
       </Routes>
     </>
   );
