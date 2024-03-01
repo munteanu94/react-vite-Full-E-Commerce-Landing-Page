@@ -1,13 +1,13 @@
 import React from "react";
-import Nav from "../component/homeComponent/Nav";
-import Search from "../component/homeComponent/secondBox/Search";
-
+import FirstBlock from "../component/homeComponent/firstContainer/FirstBlock";
+import TabList from "../component/homeComponent/secondContainer/TabList";
+import PopularProducts from "../component/homeComponent/FirdContainer/PopularProducts";
 export default function Home() {
   return (
     <>
-      <Nav />
-      <Search />
-      <h1>Hello Home</h1>
+      <FirstBlock />
+      <TabList />
+      <PopularProducts />
     </>
   );
 }
