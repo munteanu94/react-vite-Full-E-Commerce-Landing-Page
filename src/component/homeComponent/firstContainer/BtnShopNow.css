@@ -1,0 +1,10 @@
+.BtnShopNow {
+  text-decoration: none;
+  background-color: red;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 4px;
+}
+.BtnShopNow:hover {
+  opacity: 0.6;
+}
