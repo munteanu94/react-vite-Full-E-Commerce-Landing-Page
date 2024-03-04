@@ -1,0 +1,151 @@
+.containerPopular {
+  padding: 50px 100px;
+}
+.containerPopular > h2,
+.containerPopular > p {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.containerPopular > h2 {
+  font-size: 40px;
+}
+.containerPopular > p {
+  color: rgb(166, 162, 162);
+}
+.containerPopular .boxPopular {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+.boxPopular .columnBox1 .btnsPopular {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.boxPopular .columnBox1 .btnsPopular div {
+  display: flex;
+  background-color: rgb(226, 222, 222);
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.boxPopular .columnBox1 .btnsPopular div.activ {
+  color: red;
+}
+.boxPopular .columnBox1 .btnsPopular div.active:hover {
+  color: red;
+}
+.boxPopular .columnBox1 .btnsPopular div.active:focus {
+  color: red;
+  background-color: aqua;
+}
+
+.containerPopular .boxPopular .columnBox1 img {
+  width: 100%;
+  height: 100%;
+}
+.containerPopular .boxPopular .columnBox2 {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: max-content;
+  gap: 20px;
+}
+.columnBox1 .containerBanner {
+  margin-top: 20px;
+  position: relative;
+}
+.columnBox1 .containerBanner .boxBanner {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+.boxBanner h2,
+.boxBanner h3,
+.boxBanner p {
+  color: white;
+  margin-bottom: 15px;
+}
+.boxBanner h2 {
+  font-size: 45px;
+  font-weight: 900;
+  color: bisque;
+}
+.boxBanner h3 {
+  font-size: 35px;
+  font-weight: 400;
+}
+.boxBanner p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* style products */
+.PopularProduct {
+  border: 1px solid rgb(233, 230, 230);
+  border-radius: 5px;
+  padding: 10px;
+}
+.PopularProduct img {
+  width: 100%;
+}
+.PopularProduct .nameProducts {
+  color: rgb(117, 115, 115);
+  text-align: center;
+  margin-bottom: 10px;
+}
+.PopularProduct .feedback {
+  display: flex;
+  justify-content: center;
+}
+.PopularProduct .feedback .review {
+  color: rgb(117, 115, 115);
+  margin-left: 5px;
+}
+.PopularProduct .discreabeProducts {
+  text-align: center;
+  margin: 15px 0px;
+  padding: 0px 10px;
+}
+.PopularProduct .boxPrice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+.PopularProduct .priceProducts {
+  color: red;
+  font-weight: 900;
+}
+.PopularProduct .prePriceProducts {
+  color: rgb(117, 115, 115);
+  font-size: 13px;
+}
+@media (max-width: 1000px) {
+  .containerPopular .boxPopular .columnBox2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .containerPopular .boxPopular {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .containerPopular .boxPopular .columnBox2 {
+    grid-column: span 1;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 672px) {
+  .containerPopular {
+    padding: 50px 20px;
+  }
+}
+@media (max-width: 550px) {
+  .containerPopular .boxPopular {
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 20px;
+  }
+}
